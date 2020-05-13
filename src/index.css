@@ -6,3 +6,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.navbar {
+  background-color: rgb(34, 43, 35);
+}
+
+.footer {
+  height: 100px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(34, 43, 35);
+  color: white;
+  text-align: center;
+}
