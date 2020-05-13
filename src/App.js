@@ -38,30 +38,7 @@ function App() {
                     </Route>
                 </Switch>
             </Router>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
-            <p>asdfadsf</p>
+            
             <Footer />
         </div>
     );
