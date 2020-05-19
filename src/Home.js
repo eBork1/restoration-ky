@@ -15,12 +15,12 @@ export default class Home extends React.Component {
                         </p>
                     </div>
                     <div className="col-lg-5 col-md-12 col-sm-12">
-                        <img className="" id="homeimg1" src="https://www.houselogic.com/wp-content/uploads/2019/05/spring-landscaping-ideas-yard.jpg"></img>
+                        <img className="" id="homeimg1" src="https://www.houselogic.com/wp-content/uploads/2019/05/spring-landscaping-ideas-yard.jpg" alt="landscaping"></img>
                     </div>
                 </div>
                 <div className="row mt-5 mb-5" id="revRow">
                     <div className="col-lg-5 col-md-12 col-sm-12">
-                        <img className="img2" id="homeimg2" src="https://www.thespruce.com/thmb/vjBa6VUztPRNHRvNnUGVOI7O5ww=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/close-up-of-industrial-bricklayer-installing-bricks-on-construction-site-622800884-5aefafd3ff1b7800365fc4e0.jpg"></img>
+                        <img className="img2" id="homeimg2" src="https://www.thespruce.com/thmb/vjBa6VUztPRNHRvNnUGVOI7O5ww=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/close-up-of-industrial-bricklayer-installing-bricks-on-construction-site-622800884-5aefafd3ff1b7800365fc4e0.jpg" alt="masonry"></img>
                     </div>
                     <div className="col-lg-7 col-md-12 col-sm-12">
                         <h1 className="border-bottom border-dark pb-2 text-right" id="header">Masonry Projects</h1>
@@ -38,6 +38,7 @@ export default class Home extends React.Component {
                     </div>
                 </div>
                 <div className="row mt-3 pt-3">
+                    <div className="col-3"></div>
                     <div className="col-lg-3 col-sm-12 mx-auto text-center">
                         <p><a href="/services">Retaining Walls</a></p>
                         <p><a href="/services">Pavers</a></p>
@@ -49,6 +50,20 @@ export default class Home extends React.Component {
                         <p><a href="/services">Pressure Cleaning</a></p>
                         <p><a href="/services">Weatherproofing</a></p>
                         <p><a href="/services">Tree Service</a></p>
+                    </div>
+                    <div className="col-3"></div>
+                </div>
+                <div className="row mt-5">
+                    <div className="col-10 mx-auto text-center bg-primary shadow">
+                        <a href="/contact">
+                            <h1 id="header" className="p-2">Get a quote TODAY</h1>
+                        </a>
+                    </div>
+                </div>
+                <div className="row mt-5">
+                    <div className="col-12 mx-auto text-center">
+                        <a href="https://www.bbb.org/"><img src="/bbb.png" id="bbb" alt="bbb logo"></img></a>
+                        <a href="https://www.homeadvisor.com/"><img src="/ha.png" id="bbb" alt="home advisor logo"></img></a>
                     </div>
                 </div>
 
