@@ -5,7 +5,7 @@ export default class Home extends React.Component {
         return (
             <div className="container">
                 <div className="row mt-5">
-                    <div className="col-lg-7  col-md-12 col-sm-12">
+                    <div className="col-lg-7 col-md-12 col-sm-12">
                         <h1 className="border-bottom border-dark pb-2" id="header">Specializing in Landscaping</h1>
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -31,7 +31,25 @@ export default class Home extends React.Component {
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                         </p>
                     </div>
-
+                </div>
+                <div className="row mt-5">
+                    <div className="col-12 mx-auto text-center border-bottom border-dark pb-2" id="header">
+                        <h1 id="header">...and many other <a href="/services">services</a></h1>
+                    </div>
+                </div>
+                <div className="row mt-3 pt-3">
+                    <div className="col-lg-3 col-sm-12 mx-auto text-center">
+                        <p><a href="/services">Retaining Walls</a></p>
+                        <p><a href="/services">Pavers</a></p>
+                        <p><a href="/services">Fire Places</a></p>
+                        <p><a href="/services">Bobcat Service</a></p>
+                    </div>
+                    <div className="col-lg-3 col-sm-12 mx-auto text-center">
+                        <p><a href="/services">Patios</a></p>
+                        <p><a href="/services">Pressure Cleaning</a></p>
+                        <p><a href="/services">Weatherproofing</a></p>
+                        <p><a href="/services">Tree Service</a></p>
+                    </div>
                 </div>
 
             </div>
