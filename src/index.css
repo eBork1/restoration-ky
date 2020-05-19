@@ -10,7 +10,7 @@ body {
 }
 
 .footer {
-  height: 100px;
+  height: 200px;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -26,6 +26,10 @@ body {
 
 #homeimg1 {
   width: 100%;
+}
+
+#bbb {
+  width: 20%;
 }
 
 .img2 {
