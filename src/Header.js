@@ -7,7 +7,7 @@ export default class Header extends React.Component {
             <div>
                 <header className="header1">
                     <div>
-                        <img className="mx-auto p-0" id="banner1" src="/RestorationsKYBanner.png"></img>
+                        <img className="mx-auto p-0" id="banner1" src="/RestorationsKYBanner.png" alt="header banner"></img>
                     </div>
                 </header>
             </div>
