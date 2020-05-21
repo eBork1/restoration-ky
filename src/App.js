@@ -12,6 +12,7 @@ import {
 import Header from './Header';
 import Nav from './Nav';
 import Home from './Home';
+import About from './About';
 import Services from './Services';
 import Gallery from './Gallery';
 import Contact from './Contact';
@@ -26,6 +27,9 @@ function App() {
                 <Switch>
                     <Route exact path="/">
                         <Home />
+                    </Route>
+                    <Route exact path="/about">
+                        <About />
                     </Route>
                     <Route exact path="/services">
                         <Services />
