@@ -3,7 +3,7 @@ import React from 'react';
 export default class Home extends React.Component {
     render() {
         return (
-            <div className="container">
+            <div className="container pt-3">
                 <div className="row mt-5">
                     <div className="col-lg-7 col-md-12 col-sm-12">
                         <h1 className="border-bottom border-dark pb-2" id="header">Specializing in Landscaping</h1>
@@ -15,12 +15,12 @@ export default class Home extends React.Component {
                         </p>
                     </div>
                     <div className="col-lg-5 col-md-12 col-sm-12">
-                        <img className="" id="homeimg1" src="https://www.houselogic.com/wp-content/uploads/2019/05/spring-landscaping-ideas-yard.jpg" alt="landscaping"></img>
+                        <img className="" id="homeimg1" src="/landscape.jpg" alt="landscaping"></img>
                     </div>
                 </div>
-                <div className="row mt-5 mb-5" id="revRow">
+                <div className="row mt-5 mb-5 pt-3" id="revRow">
                     <div className="col-lg-5 col-md-12 col-sm-12">
-                        <img className="img2" id="homeimg2" src="https://www.thespruce.com/thmb/vjBa6VUztPRNHRvNnUGVOI7O5ww=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/close-up-of-industrial-bricklayer-installing-bricks-on-construction-site-622800884-5aefafd3ff1b7800365fc4e0.jpg" alt="masonry"></img>
+                        <img className="img2" id="homeimg2" src="/masonry.jpg" alt="masonry"></img>
                     </div>
                     <div className="col-lg-7 col-md-12 col-sm-12">
                         <h1 className="border-bottom border-dark pb-2 text-right" id="header">Masonry Projects</h1>
@@ -33,7 +33,7 @@ export default class Home extends React.Component {
                     </div>
                 </div>
                 <div className="row mt-5">
-                    <div className="col-12 mx-auto text-center border-bottom border-dark pb-2" id="header">
+                    <div className="col-sm-12 col-md-10 col-lg-8 mx-auto text-center border-bottom border-dark pb-2" id="header">
                         <h1 id="header">...and many other <a href="/services">services</a></h1>
                     </div>
                 </div>
