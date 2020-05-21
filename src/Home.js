@@ -62,8 +62,8 @@ export default class Home extends React.Component {
                 </div>
                 <div className="row mt-5">
                     <div className="col-12 mx-auto text-center">
-                        <a href="https://www.bbb.org/"><img src="/bbb.png" id="bbb" alt="bbb logo"></img></a>
-                        <a href="https://www.homeadvisor.com/"><img src="/ha.png" id="bbb" alt="home advisor logo"></img></a>
+                        <a href="https://www.bbb.org/" target="_blank" rel="noopener noreferrer"><img src="/bbb.png" id="bbb" alt="bbb logo"></img></a>
+                        <a href="https://www.homeadvisor.com/" target="_blank" rel="noopener noreferrer"><img src="/ha.png" id="bbb" alt="home advisor logo"></img></a>
                     </div>
                 </div>
 
