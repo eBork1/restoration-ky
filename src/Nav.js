@@ -10,10 +10,11 @@ export default class Nav extends React.Component {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav text-center mx-auto">
-                            <a className="nav-item nav-link" href="/">Home <span className="sr-only">(current)</span></a>
-                            <a className="nav-item nav-link" href="/services">Services</a>
-                            <a className="nav-item nav-link" href="/gallery">Gallery</a>
-                            <a className="nav-item nav-link" href="/contact">Contact</a>
+                            <a className="nav-item nav-link text-warning px-4" href="/">Home</a>
+                            <a className="nav-item nav-link text-warning px-4" href="/about">About</a>
+                            <a className="nav-item nav-link text-warning px-4" href="/services">Services</a>
+                            <a className="nav-item nav-link text-warning px-4" href="/gallery">Gallery</a>
+                            <a className="nav-item nav-link text-warning px-4" href="/contact">Contact</a>
                         </div>
                     </div>
                 </nav>
