@@ -15,6 +15,11 @@ export default class Footer extends React.Component {
                             <a className="nav-item nav-link text-warning" href="/services">Services</a>
                             <a className="nav-item nav-link text-warning" href="/gallery">Gallery</a>
                             <a className="nav-item nav-link text-warning" href="/contact">Contact</a>
+                            {localStorage.getItem("user") ?
+                                <a className="nav-item nav-link text-warning" href="/logout">logout</a>
+                                :
+                                <a className="nav-item nav-link text-warning" href="/login">Admin Login</a>
+                            }
                         </div>
                     </div>
                 </div>
