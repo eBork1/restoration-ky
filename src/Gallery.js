@@ -9,6 +9,7 @@ export default class Gallery extends React.Component {
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.getImages = this.getImages.bind(this);
     }
 
     handleChange = event => {
@@ -22,27 +23,34 @@ export default class Gallery extends React.Component {
         ref.child("gallery/" + image.name).put(image)
             .then(snapshot => snapshot.ref.getDownloadURL())
             .then(url => console.log(url))
-            .then(()=>{
+            .then(() => {
                 window.location.reload(true);
             })
     }
 
-    getImages(){
+    getImages = () => {
         var ref = firebase.storage().ref();
         var listRef = ref.child("gallery/");
+        var urlArr = [];
+
         listRef.listAll().then(function (res) {
             res.items.forEach(function (itemRef) {
-                // All the items under listRef.
                 itemRef.getDownloadURL()
-                .then(url => console.log(url));
+                    .then(url => urlArr.push(url))
+            })
+        }).then(() => {
+            this.setState({urlArr});
+        })
+            .catch(function (error) {
+                console.log(error);
             });
-        }).catch(function (error) {
-            // Uh-oh, an error occurred!
-            console.log(error);
-        });
     }
 
-    componentDidMount(){
+    checkState = () => {
+        console.log(this.state);
+    }
+
+    componentDidMount() {
         this.getImages();
     }
 
@@ -58,6 +66,7 @@ export default class Gallery extends React.Component {
                             <div>
                                 <input type="file" onChange={this.handleChange}></input>
                                 <button onClick={this.handleSubmit}>Submit</button>
+                                <button onClick={this.checkState}>check state</button>
                             </div>
                         }
                     </div>
