@@ -22,7 +22,6 @@ export default class Gallery extends React.Component {
         var ref = firebase.storage().ref();
         ref.child("gallery/" + image.name).put(image)
             .then(snapshot => snapshot.ref.getDownloadURL())
-            .then(url => console.log(url))
             .then(() => {
                 window.location.reload(true);
             })
@@ -33,48 +32,69 @@ export default class Gallery extends React.Component {
         var listRef = ref.child("gallery/");
         var urlArr = [];
 
-        listRef.listAll().then(function (res) {
-            res.items.forEach(function (itemRef) {
-                itemRef.getDownloadURL()
-                    .then(url => urlArr.push(url))
-            })
-        }).then(() => {
-            this.setState({urlArr});
-        })
-            .catch(function (error) {
+        listRef.listAll()
+            .then(function (res) {
+                res.items.forEach(function (itemRef) {
+                    itemRef.getDownloadURL()
+                        .then(url => urlArr.push(url))
+                });
+            }).catch(function (error) {
                 console.log(error);
             });
+        this.setState({ urlArr });
     }
 
-    checkState = () => {
-        console.log(this.state);
+    refresh = () => {
+        this.forceUpdate();
     }
 
     componentDidMount() {
         this.getImages();
+        setTimeout(function () { this.setState({ loaded: true }); }.bind(this), 3000);
     }
 
     render() {
+        if (!this.state.loaded) {
+            return <div>Loading...</div>
+        }
         return (
             <div>
                 {localStorage.getItem("user") ?
                     <div>
-
                         {this.props.adminStatus === null ?
                             <p>not logged in</p>
                             :
                             <div>
                                 <input type="file" onChange={this.handleChange}></input>
                                 <button onClick={this.handleSubmit}>Submit</button>
-                                <button onClick={this.checkState}>check state</button>
+                                <br />
+                                <button onClick={this.refresh}>Refresh</button>
                             </div>
                         }
                     </div>
                     :
-                    <div>
-                        regular person view
-                </div>
+                    null
                 }
+                <div className="container">
+                    {this.state.urlArr && this.state.urlArr.length > 1 ?
+                        <div>
+                            <div className="row">
+                                {this.state.urlArr.map((url, idx) => {
+                                    return (
+                                        <div key={idx} className="col-4 mx-auto">
+                                            <a href={url}><img src={url} id="homeimg1"></img></a>
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                        </div>
+                        :
+                        <div>
+                            nothing yet
+                                </div>
+                    }
+
+                </div>
             </div>
         )
     }
