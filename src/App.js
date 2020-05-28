@@ -32,15 +32,15 @@ class App extends React.Component {
     authListener() {
         fire.auth().onAuthStateChanged((user) => {
             if (user) {
-                console.log(user);
+                // console.log(user);
                 this.setState({ user });
                 localStorage.setItem('user', user.uid);
             } else {
-                console.log("not logged in")
+                // console.log("not logged in")
                 this.setState({ user: null });
                 localStorage.removeItem('user');
             }
-            console.log(this.state);
+            // console.log(this.state);
         })
     }
     componentDidMount(){
