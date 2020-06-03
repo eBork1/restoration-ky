@@ -40,16 +40,16 @@ export default class Home extends React.Component {
                 <div className="row mt-3 pt-3">
                     <div className="col-3"></div>
                     <div className="col-lg-3 col-sm-12 mx-auto text-center">
-                        <p><a href="/services">Retaining Walls</a></p>
-                        <p><a href="/services">Pavers</a></p>
-                        <p><a href="/services">Fire Places</a></p>
-                        <p><a href="/services">Bobcat Service</a></p>
+                        <p><a href="/services#retaining">Retaining Walls</a></p>
+                        <p><a href="/services#pavers">Pavers</a></p>
+                        <p><a href="/services#fireplaces">Fire Places</a></p>
+                        <p><a href="/services#bobcat">Bobcat Service</a></p>
                     </div>
                     <div className="col-lg-3 col-sm-12 mx-auto text-center">
-                        <p><a href="/services">Patios</a></p>
-                        <p><a href="/services">Pressure Cleaning</a></p>
-                        <p><a href="/services">Weatherproofing</a></p>
-                        <p><a href="/services">Tree Service</a></p>
+                        <p><a href="/services#patios">Patios</a></p>
+                        <p><a href="/services#pressurecleaning">Pressure Cleaning</a></p>
+                        <p><a href="/services#weatherproofing">Weatherproofing</a></p>
+                        <p><a href="/services#treeservice">Tree Service</a></p>
                     </div>
                     <div className="col-3"></div>
                 </div>
