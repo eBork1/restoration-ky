@@ -16,7 +16,7 @@ export default class Services extends React.Component {
                     </div>
                     <div className="row mt-5 mx-auto" id="revRow">
                         <div className="col-sm-12 col-md-5 col-lg-4">
-                            <img className="" id="serviceimg" src="/landscape.jpg" alt="landscaping"></img>
+                            <img className="" id="serviceimg" src="/masonry.jpg" alt="masonry"></img>
                         </div>
                         <div className="col-sm-12 col-md-5 col-lg-6 ml-0">
                             <h2 id="header" className="border-bottom">Masonry</h2>
@@ -25,7 +25,7 @@ export default class Services extends React.Component {
                     </div>
                     <div className="row mt-5 mx-auto" id="revRow">
                         <div className="col-sm-12 col-md-5 col-lg-4">
-                            <img className="" id="serviceimg" src="/landscape.jpg" alt="landscaping"></img>
+                            <img className="" id="serviceimg" src="/retainingwall.jpg" alt="retaining walls"></img>
                         </div>
                         <div className="col-sm-12 col-md-5 col-lg-6 ml-0">
                             <h2 id="header" className="border-bottom">Retaining Walls</h2>
@@ -34,7 +34,7 @@ export default class Services extends React.Component {
                     </div>
                     <div className="row mt-5 mx-auto" id="revRow">
                         <div className="col-sm-12 col-md-5 col-lg-4">
-                            <img className="" id="serviceimg" src="/landscape.jpg" alt="landscaping"></img>
+                            <img className="" id="serviceimg" src="/pavers.jpg" alt="pavers"></img>
                         </div>
                         <div className="col-sm-12 col-md-5 col-lg-6 ml-0">
                             <h2 id="header" className="border-bottom">Pavers</h2>
@@ -43,7 +43,7 @@ export default class Services extends React.Component {
                     </div>
                     <div className="row mt-5 mx-auto" id="revRow">
                         <div className="col-sm-12 col-md-5 col-lg-4">
-                            <img className="" id="serviceimg" src="/landscape.jpg" alt="landscaping"></img>
+                            <img className="" id="serviceimg" src="/fireplace.jpg" alt="fireplaces"></img>
                         </div>
                         <div className="col-sm-12 col-md-5 col-lg-6 ml-0">
                             <h2 id="header" className="border-bottom">Fire Places</h2>
@@ -52,7 +52,7 @@ export default class Services extends React.Component {
                     </div>
                     <div className="row mt-5 mx-auto" id="revRow">
                         <div className="col-sm-12 col-md-5 col-lg-4">
-                            <img className="" id="serviceimg" src="/landscape.jpg" alt="landscaping"></img>
+                            <img className="border border-dark" id="serviceimg" src="/bobcat.jpg" alt="bobcat service"></img>
                         </div>
                         <div className="col-sm-12 col-md-5 col-lg-6 ml-0">
                             <h2 id="header" className="border-bottom">Bobcat Service</h2>
@@ -61,7 +61,7 @@ export default class Services extends React.Component {
                     </div>
                     <div className="row mt-5 mx-auto" id="revRow">
                         <div className="col-sm-12 col-md-5 col-lg-4">
-                            <img className="" id="serviceimg" src="/landscape.jpg" alt="landscaping"></img>
+                            <img className="" id="serviceimg" src="/patio.jpeg" alt="Patios"></img>
                         </div>
                         <div className="col-sm-12 col-md-5 col-lg-6 ml-0">
                             <h2 id="header" className="border-bottom">Patios</h2>
@@ -70,7 +70,7 @@ export default class Services extends React.Component {
                     </div>
                     <div className="row mt-5 mx-auto" id="revRow">
                         <div className="col-sm-12 col-md-5 col-lg-4">
-                            <img className="" id="serviceimg" src="/landscape.jpg" alt="landscaping"></img>
+                            <img className="" id="serviceimg" src="/pressurecleaning.jpeg" alt="pressure cleaning"></img>
                         </div>
                         <div className="col-sm-12 col-md-5 col-lg-6 ml-0">
                             <h2 id="header" className="border-bottom">Pressure Cleaning</h2>
@@ -79,7 +79,7 @@ export default class Services extends React.Component {
                     </div>
                     <div className="row mt-5 mx-auto" id="revRow">
                         <div className="col-sm-12 col-md-5 col-lg-4">
-                            <img className="" id="serviceimg" src="/landscape.jpg" alt="landscaping"></img>
+                            <img className="" id="serviceimg" src="/weatherproofing.jpg" alt="weather proofing"></img>
                         </div>
                         <div className="col-sm-12 col-md-5 col-lg-6 ml-0">
                             <h2 id="header" className="border-bottom">Weatherproofing</h2>
@@ -88,7 +88,7 @@ export default class Services extends React.Component {
                     </div>
                     <div className="row mt-5 mx-auto" id="revRow">
                         <div className="col-sm-12 col-md-5 col-lg-4">
-                            <img className="" id="serviceimg" src="/landscape.jpg" alt="landscaping"></img>
+                            <img className="" id="serviceimg" src="/treeservice.jpg" alt="tree service"></img>
                         </div>
                         <div className="col-sm-12 col-md-5 col-lg-6 ml-0">
                             <h2 id="header" className="border-bottom">Tree Service</h2>
