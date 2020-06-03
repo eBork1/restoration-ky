@@ -37,6 +37,7 @@ export default class Gallery extends React.Component {
                 res.items.forEach(function (itemRef) {
                     itemRef.getDownloadURL()
                         .then(url => urlArr.push(url))
+                        .then(console.log(urlArr))
                 });
             }).catch(function (error) {
                 console.log(error);
@@ -50,7 +51,7 @@ export default class Gallery extends React.Component {
 
     componentDidMount() {
         this.getImages();
-        setTimeout(function () { this.setState({ loaded: true }); }.bind(this), 3000);
+        setTimeout(function () { this.setState({ loaded: true }); }.bind(this), 2000);
     }
 
     render() {
@@ -65,8 +66,8 @@ export default class Gallery extends React.Component {
                             <p>not logged in</p>
                             :
                             <div>
-                                <input type="file" onChange={this.handleChange}></input>
-                                <button onClick={this.handleSubmit}>Submit</button>
+                                <input className="btn btn=light" type="file" onChange={this.handleChange}></input>
+                                <button className="btn btn-success" onClick={this.handleSubmit}>Submit</button>
                                 <br />
                                 <button onClick={this.refresh}>Refresh</button>
                             </div>
@@ -75,7 +76,7 @@ export default class Gallery extends React.Component {
                     :
                     null
                 }
-                <div className="container">
+                <div className="container mt-5">
                     {this.state.urlArr && this.state.urlArr.length > 1 ?
                         <div>
                             <div className="row">
