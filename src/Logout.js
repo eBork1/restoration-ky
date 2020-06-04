@@ -2,14 +2,26 @@ import React from 'react';
 import fire from './Fire';
 
 export default class Logout extends React.Component {
+
+    authListener() {
+        fire.auth().onAuthStateChanged((user) => {
+            if (user) {
+                this.Logout();
+            } else {
+                window.location.replace("/")
+            }
+            // console.log(this.state);
+        })
+    }
     
     Logout(){
         fire.auth().signOut();
         localStorage.removeItem("user");
     }
+    
 
     componentDidMount(){
-        this.Logout();
+        this.authListener();
     }
 
     render(){
