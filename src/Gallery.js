@@ -13,7 +13,7 @@ export default class Gallery extends React.Component {
     }
 
     handleChange = event => {
-        console.log(event.target.files[0]);
+        // console.log(event.target.files[0]);
         this.setState({ uploadedFile: event.target.files[0] });
     }
 
@@ -37,7 +37,7 @@ export default class Gallery extends React.Component {
                 res.items.forEach(function (itemRef) {
                     itemRef.getDownloadURL()
                         .then(url => urlArr.push(url))
-                        .then(console.log(urlArr))
+                        // .then(console.log(urlArr))
                 });
             }).catch(function (error) {
                 console.log(error);
