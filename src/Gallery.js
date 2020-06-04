@@ -1,5 +1,5 @@
 import React from 'react';
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 
 export default class Gallery extends React.Component {
     constructor(props) {
@@ -82,7 +82,7 @@ export default class Gallery extends React.Component {
                             <div className="row">
                                 {this.state.urlArr.map((url, idx) => {
                                     return (
-                                        <div key={idx} className="col-4 mx-auto">
+                                        <div key={idx} className="col-lg-4 col-md-6 col-sm-12 mb-4 mx-auto">
                                             <a href={url}><img src={url} id="homeimg1" alt="gallery img"></img></a>
                                         </div>
                                     )
