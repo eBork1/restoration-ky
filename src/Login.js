@@ -23,7 +23,7 @@ export default class Login extends React.Component {
     login(event) {
         event.preventDefault();
         fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u) => {
-            console.log("success");
+            window.location.replace("/")
         }).catch((error) => {
             console.log(error);
             this.setState({errorStatus: error});
