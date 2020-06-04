@@ -1,18 +1,7 @@
-.header1{
+.header1 {
     height: 18vh;
+    background-image: url(../src/RestorationsKYBanner.png);
 }
-
-/* .parallax {
-    background-image: url(/RestorationsKYBanner.png);
-    height: 100%;
-    max-width: 100%; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
-#banner1 {
-    height: 18vh;
-    width: 100vw !important;
+.rkylogo {
+    width: 20vh;
 }
