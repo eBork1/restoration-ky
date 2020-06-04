@@ -83,7 +83,7 @@ export default class Gallery extends React.Component {
                                 {this.state.urlArr.map((url, idx) => {
                                     return (
                                         <div key={idx} className="col-4 mx-auto">
-                                            <a href={url}><img src={url} id="homeimg1"></img></a>
+                                            <a href={url}><img src={url} id="homeimg1" alt="gallery img"></img></a>
                                         </div>
                                     )
                                 })}
