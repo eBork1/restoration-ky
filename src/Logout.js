@@ -10,7 +10,6 @@ export default class Logout extends React.Component {
             } else {
                 window.location.replace("/")
             }
-            // console.log(this.state);
         })
     }
     
